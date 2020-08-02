@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 17:11:16 2020
+# Process ID: 20592
+# Current directory: E:/code/xilinx/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19320 E:\code\xilinx\Camera_Demo\Camera_Demo.xpr
+# Log file: E:/code/xilinx/Camera_Demo/vivado.log
+# Journal file: E:/code/xilinx/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/code/xilinx/Camera_Demo/Camera_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'E:/qq文件/Camera_Demo - 副本' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'E:/code/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl', nor could it be found using path 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/code/xilinx/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 809.797 ; gain = 199.039
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Aug  1 17:12:45 2020] Launched synth_1...
+Run output will be captured here: E:/code/xilinx/Camera_Demo/Camera_Demo.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Aug  1 17:13:56 2020] Launched impl_1...
+Run output will be captured here: E:/code/xilinx/Camera_Demo/Camera_Demo.runs/impl_1/runme.log
