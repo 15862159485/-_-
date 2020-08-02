@@ -1,0 +1,4 @@
+source文件夹中为两个工程
+Camera_Demo为采用模板匹配的方法进行数字识别的工程
+Camera_Demo_2为采用数字特征的方法进行数字识别的工程
+两个工程中均为process.v文件为对Camera的RGB信号进行处理并且进行数字识别的模块
