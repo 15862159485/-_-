@@ -1,0 +1,2 @@
+mem_0.v,verilog,xil_defaultlib,../../../../Camera_Demo.srcs/sources_1/ip/mem_0/sim/mem_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

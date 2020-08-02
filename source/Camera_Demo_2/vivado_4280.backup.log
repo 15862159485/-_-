@@ -1,0 +1,169 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  1 01:40:22 2020
+# Process ID: 4280
+# Current directory: E:/qq文件/Camera_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12116 E:\qq文件\Camera_Demo\Camera_Demo.xpr
+# Log file: E:/qq文件/Camera_Demo/vivado.log
+# Journal file: E:/qq文件/Camera_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/qq文件/Camera_Demo/Camera_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'D:/camra/Camera_Demo' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/qq文件/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 783.125 ; gain = 188.438
+update_compile_order -fileset sources_1
+close_project
+open_project E:/code/xilinx/test/test/test.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/code/xilinx/test/test/ip/RGB2DVI_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/code/xilinx/test/test/ip/OV5647_Init_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/code/xilinx/test/test/ip/Driver_IIC_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/code/xilinx/test/test/ip/Driver_MIPI0_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+add_files -norecurse E:/code/xilinx/test/test/ip/Driver_MIPI.v
+file mkdir E:/code/xilinx/test/test/test.srcs/constrs_1
+file mkdir E:/code/xilinx/test/test/test.srcs/constrs_1/new
+close [ open E:/code/xilinx/test/test/test.srcs/constrs_1/new/constraint.xdc w ]
+add_files -fileset constrs_1 E:/code/xilinx/test/test/test.srcs/constrs_1/new/constraint.xdc
+launch_runs synth_1 -jobs 4
+[Sat Aug  1 01:47:50 2020] Launched synth_1...
+Run output will be captured here: E:/code/xilinx/test/test/test.runs/synth_1/runme.log
+close_project
+open_project E:/qq文件/Camera_Demo/Camera_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'D:/camra/Camera_Demo' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/FPGA-Demo-Project/Camera_Demo/tcl/Elimate_Constraints_Error.tcl'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/qq文件/Camera_Demo/IP_Core'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7s15ftgb196-1
+Top: Camera_Demo
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1620.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Camera_Demo' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (2#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_MIPI' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (3#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/clk_wiz_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'csi2_d_phy_rx_0' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/csi2_d_phy_rx_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi2_d_phy_rx_0' (4#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/csi2_d_phy_rx_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'Data_Read' of module 'csi2_d_phy_rx_0' requires 33 connections, but only 25 given [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:75]
+INFO: [Synth 8-6157] synthesizing module 'csi_to_axis_0' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'csi_to_axis_0' (5#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/csi_to_axis_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Csi_To_Dvp' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+	Parameter Default_AXIS_TREADY bound to: 1'b1 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXIS_Data_RAM' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AXIS_Data_RAM' (6#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/AXIS_Data_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Csi_To_Dvp' (7#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Csi_To_Dvp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_Bayer_To_RGB' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter HSIZE bound to: 1280 - type: integer 
+	Parameter HFP bound to: 1390 - type: integer 
+	Parameter HSP bound to: 1430 - type: integer 
+	Parameter HMAX bound to: 1650 - type: integer 
+	Parameter VSIZE bound to: 720 - type: integer 
+	Parameter VFP bound to: 725 - type: integer 
+	Parameter VSP bound to: 730 - type: integer 
+	Parameter VMAX bound to: 750 - type: integer 
+	Parameter HSPP bound to: 0 - type: integer 
+	Parameter VSPP bound to: 0 - type: integer 
+	Parameter DELAY_LINE bound to: 2 - type: integer 
+	Parameter ST_IDLE bound to: 3'b000 
+	Parameter ST_IDLE_START bound to: 3'b001 
+	Parameter ST_PATTERN0 bound to: 3'b010 
+	Parameter ST_PATTERN1 bound to: 3'b011 
+	Parameter ST_IDLE_GR bound to: 3'b100 
+	Parameter ST_PATTERN2 bound to: 3'b101 
+	Parameter ST_PATTERN3 bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'RAM_Line' [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_Line' (8#1) [E:/qq文件/Camera_Demo/.Xil/Vivado-4280-DESKTOP-8PVD1CG/realtime/RAM_Line_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_Bayer_To_RGB' (9#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_Bayer_To_RGB.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_MIPI' (10#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_MIPI.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (11#1) [D:/xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
+INFO: [Synth 8-6157] synthesizing module 'OV5647_Init' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+	Parameter SLAVE_ADDRESS bound to: 8'b01101100 
+	Parameter INITIAL_NUM bound to: 8'b01011000 
+	Parameter REG_ADDR2_EN bound to: 1'b1 
+	Parameter WR_HOLD_T bound to: 4'b1010 
+	Parameter WR_VALID bound to: 1'b1 
+	Parameter WAIT_DELAY bound to: 20'b00011000011010100000 
+	Parameter IDLE bound to: 2'b00 
+	Parameter START bound to: 2'b01 
+	Parameter WAIT bound to: 2'b10 
+	Parameter END bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'ROM_OV5647' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_OV5647' (12#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:243]
+INFO: [Synth 8-6157] synthesizing module 'Trigger_Generator' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23]
+	Parameter ST_WAIT bound to: 2'b00 
+	Parameter ST_START bound to: 2'b01 
+	Parameter ST_HOLD bound to: 2'b10 
+	Parameter ST_END bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Trigger_Generator' (13#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Trigger_Generator.v:23]
+WARNING: [Synth 8-6014] Unused sequential element en_rd_rom_reg was removed.  [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'OV5647_Init' (14#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/OV5647_Init.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_IIC' [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22]
+	Parameter System_Clk_MHz bound to: 13'b0000001100100 
+	Parameter Set_IIC_SCL_kHz bound to: 13'b0000001100100 
+	Parameter SCL_Divider bound to: 13'b0000000000001 
+	Parameter SCL_SUM bound to: 13'b0001111101000 
+	Parameter SCL_H_START bound to: 0 - type: integer 
+	Parameter SCL_H_CENTER bound to: 249 - type: integer 
+	Parameter SCL_L_START bound to: 499 - type: integer 
+	Parameter SCL_L_CENTER bound to: 749 - type: integer 
+	Parameter ST_IDLE bound to: 5'b00000 
+	Parameter ST_START bound to: 5'b00001 
+	Parameter ST_W_SADDR bound to: 5'b00010 
+	Parameter ST_ACK_0 bound to: 5'b00011 
+	Parameter ST_W_ADDR_H bound to: 5'b00100 
+	Parameter ST_ACK_1 bound to: 5'b00101 
+	Parameter ST_W_ADDR_L bound to: 5'b00110 
+	Parameter ST_ACK_2 bound to: 5'b00111 
+	Parameter ST_W_DATA bound to: 5'b01000 
+	Parameter ST_ACK_3 bound to: 5'b01001 
+	Parameter ST_START_R bound to: 5'b01010 
+	Parameter ST_W_SADDR_R bound to: 5'b01011 
+	Parameter ST_ACK_4 bound to: 5'b01100 
+	Parameter ST_R_DATA bound to: 5'b01101 
+	Parameter ST_NACK bound to: 5'b01110 
+	Parameter ST_STOP bound to: 5'b01111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:388]
+WARNING: [Synth 8-5788] Register data_r_o_reg in module Driver_IIC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_IIC' (15#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Driver_IIC.v:22]
+WARNING: [Synth 8-3848] Net iic_read in module/entity Camera_Demo does not have driver. [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'Camera_Demo' (16#1) [E:/qq文件/Camera_Demo/Camera_Demo.srcs/sources_1/new/Camera_Demo.v:2]
